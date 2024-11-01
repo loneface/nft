@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #030313;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: all 0.2 linear;
+}
+
+:root {
+    --font-family: "Newsreader", serif;
+    --primary-color: #D6EF0E;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.header__block {
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__btn {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 40px;
+    font-weight: 700;
+}
+
+.header__btn:hover,
+.header__btn:active {
+    background: #fff;
+    color: #030313;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    color: white;
+    opacity: 72%;
+}
+
+header nav a:hover,
+header nav a:active {
+    opacity: 1;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.hero__block {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 76.8px;
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+.hero-content__text, .create-sell__content p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.hero__exp_btn, .input_wrapper button {
+    padding: 12px 40px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.input_wrapper button:hover,
+.input_wrapper button:active,
+.hero__exp_btn:hover,
+.hero__exp_btn:active {
+    background: #fff;
+    color: #030313;
+}
+
+.hero__learn_btn {
+    background: transparent;
+    color: #fff;
+    margin-left: 36px;
+}
+
+.hero__learn_btn:hover,
+.hero__learn_btn:active {
+    color: var(--primary-color);
+}
+
+.stats {
+    padding-top: 72px;
+    display: flex;
+    gap: 94px;
+}
+
+.stats div {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57.6px;
+    color: var(--primary-color);
+}
+
+.stats div:not(:last-child) {
+    border-right: 1px solid var(--primary-color);
+    padding-right: 28px;
+}
+
+.stats div span {
+    color: #fff;
+}
+
+.stats div p {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.featured-artwork, .create-sell__images, .artist-card, .subscribe__images {
+    position: relative;
+}
+
+.hero-img {
+    position: absolute;
+    right: 51px;
+    top: -30px;
+}
+
+.stars {
+    position: absolute;
+    right: 406px;
+    top: 223px;
+}
+
+.artwork-box {
+    width: 304px;
+    padding: 20px;
+    background: #131E3A;
+    border-top: 1px solid var(--primary-color);
+    border-radius: 16px;
+
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+.artwork-box div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.artwork-box div p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.artwork-box div p span {
+    color: #fff;
+}
+
+.artwork-box_btn {
+    padding: 12px 95px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background: #131E3A;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.artwork-box_btn:hover,
+.artwork-box_btn:active,
+.card__content button:hover,
+.card__content button:active {
+    background: #fff;
+    color: #030313;
+}
+
+.featured-nfts {
+    padding-top: 118px;
+    padding-bottom: 92px;
+}
+
+.featured-nfts__title {
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.featured-nfts__title h2, .create-sell__content h2, .popular-artists__title h2, .subscribe__content h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #fff;
+}
+
+.featured-nfts h2 span, .create-sell__content h2 span, .popular-artists__title h2 span, .subscribe__content h2 span {
+    color: var(--primary-color);
+}
+
+.see-all_btn {
+    padding: 12px 40px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.see-all_btn:hover,
+.see-all_btn:active {
+    background: #fff;
+    color: #030313;
+}
+
+.nft-card {
+    border-top: 1px solid var(--primary-color);
+    background-color: #131E3A;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nft-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.card__content {
+    padding-top: 23.5px;
+}
+
+.card__last-line {
+    padding-top: 16px;
+}
+
+.card__due-text {
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #838382;
+}
+
+.card__time {
+    gap: 12px;
+}
+
+.card__content button {
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.card__title, .card__price, .card__last-line, .card__time, .create-sell__block {
+    display: flex;
+    align-items: center;
+}
+
+.card__title, .card__last-line, .create-sell__block {
+    justify-content: space-between;
+}
+
+.card__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.create-sell__block, .popular-artists {
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+
+.create-sell__images {
+    width: 740px;
+    height: 559px;
+}
+
+.create-sell-first-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.create-sell-second-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.popular-artists__title {
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: 300px, 520px, 410px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.card-1 { grid-area: 1 / 1 / 2 / 2; }
+.card-2 { grid-area: 1 / 2 / 2 / 3; }
+.card-3 { grid-area: 1 / 3 / 3 / 4; }
+.card-4 { grid-area: 2 / 1 / 3 / 2; }
+.card-5 { grid-area: 2 / 2 / 3 / 3; }
+
+.artist-card__content {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
+
+.owner-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+}
+
+.popular-artists__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.subscribe__block {
+    padding-top: 92px;
+    padding-bottom: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe__content p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.input_wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.input_wrapper input {
+    width: 516px;
+    background: #131E3A;
+    color: #fff;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+.input_wrapper button {
+    padding: 15px 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.subscribe__images {
+    width: 630px;
+    height: 458px;
+}
+
+.subscribe-img1 {
+    position: absolute;
+    
+}
+
+.subscribe-img2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-links {
+    padding-top: 92px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links div ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
